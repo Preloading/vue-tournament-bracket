@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-tournament-bracket ./src/Bracket.vue",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "eslint": "eslint src test --ignore-pattern *bundle* --ext js,vue"
   },
   "dependencies": {
     "core-js": "^3.6.5",
