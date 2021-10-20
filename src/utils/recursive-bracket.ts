@@ -75,6 +75,9 @@ export function transformFlatTree(
       return;
     }
 
+    // Extra validation 'It is hoped that it will never happen'
+    if (!game.next) return;
+
     if (!mapOfGamesPerParent[game.next]) {
       mapOfGamesPerParent[game.next] = [];
     }

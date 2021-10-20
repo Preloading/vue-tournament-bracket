@@ -25,14 +25,14 @@ interface GameMatchObject {
 
 interface GameObjectFlatTree {
   id: number;
-  next: number;
+  next?: number;
   player1: Player;
   player2: Player;
 }
 
 interface GameMatchObjectFlatTree {
   id: number;
-  next: number;
+  next?: number;
   player1: Player;
   player2: Player;
   title: string;
@@ -41,6 +41,6 @@ interface GameMatchObjectFlatTree {
 }
 
 type RoundsGameObjectArray = RoundsGameObject[];
-type RoundsGameObjectFlatArray = GameMatchObjectFlatTree[];
+type RoundsGameObjectFlatArray = GameObjectFlatTree[];
 type GameMatchObjectArray = GameMatchObject[];
 type GameMatchObjectFlatTreeArray = GameMatchObjectFlatTree[];
