@@ -1,11 +1,16 @@
 {
   "name": "vue-tournament-bracket",
   "version": "3.0.0",
-  "description": "Vue component for rendering single elemination tournament brackets.",
+  "description": "Vue component for rendering single elimination tournament brackets.",
+  "files": [
+    "dist/*",
+    "types/*"
+  ],
   "main": "dist/vue-tournament-bracket.common.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-tournament-bracket ./src/Bracket.vue",
+    "build": "vue-cli-service build --target lib --name vue-tournament-bracket ./src/index.ts",
     "lint": "vue-cli-service lint",
     "eslint": "eslint src test --ignore-pattern *bundle* --ext js,vue",
     "test:unit": "vue-cli-service test:unit",
